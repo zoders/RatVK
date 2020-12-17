@@ -8,4 +8,4 @@ install:
   - pip install -r requirements.txt --use-mirrors
 
 # Команда для запуска тестов, в моем случае они запускаются именно так
-script: python3 tests/test_generator.py &&  tests/test_parser_vk.rp
+script: python3 tests/test_generator.py &&  tests/test_parser_vk.py
