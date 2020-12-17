@@ -12,7 +12,11 @@ class test_parser_vk(unittest.TestCase):
 
     def test_profile_name_only_af(self):
         url = "https://vk.com/id185394982/"
-        self.assertEqual(parser_vk.get_profile_name(url), "Александр Филипповский")
+        name = "Alexander Filippovsky"
+        if parser_vk.get_profile_name(url) == name:
+            self.assertEqual(parser_vk.get_profile_name(url), name)
+        else:
+            self.assertEqual(parser_vk.get_profile_name(url), "Александр Филипповский")
 
     def test_profile_name(self):
         url = "https://vk.com/id185394982/"
