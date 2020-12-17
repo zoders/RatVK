@@ -17,7 +17,6 @@ class test_generator(unittest.TestCase):
 
     def test_generate_buzz_of_at_least_five_words(self):
         phrase = generator.generate_buzz()
-        phrase += " r"
         self.assertTrue(len(phrase.split()) == 5, "there is more then 5 words")
 
 
