@@ -6,7 +6,7 @@ services:
 language: python
 
 script:
-  - python3 tests/test_generator.py &&  tests/test_parser_vk.py
+  - python3 tests/test_generator.py && tests/test_parser_vk.py
 
 #after_success:
 #  - sh .travis/deploy_dockerhub.sh
