@@ -9,6 +9,6 @@ script:
   - python -m pytest -v
  # - python3 tests/test_generator.py && tests/test_parser_vk.py
 
-#after_success:
-#  - sh .travis/deploy_dockerhub.sh
-#  - sh .travis/deploy_heroku.sh
+after_success:
+  - sh .travis/deploy_dockerhub.sh
+  - sh .travis/deploy_heroku.sh
